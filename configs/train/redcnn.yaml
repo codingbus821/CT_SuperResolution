@@ -1,0 +1,23 @@
+dataset:
+  data_dir: './Mayo-lite'
+  augment: true
+  batch_size: 16
+
+model:
+  name: redcnn
+
+optimizer:
+  name: RMSprop
+  lr: 1.e-4
+  milestones: [200, 400, 600, 800]
+  gamma: 0.5
+  weight_decay: 0
+
+epochs: 100
+test_every: 10
+save_models: false
+resume: -1
+
+n_threads: 8
+cpu: false
+seed: 1

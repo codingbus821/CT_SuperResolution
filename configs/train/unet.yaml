@@ -1,0 +1,23 @@
+dataset:
+  data_dir: './Mayo-lite'
+  augment: true
+  batch_size: 16
+
+model:
+  name: drunet
+
+optimizer:
+  name: ADAM
+  lr: 1.e-4 #1.e-4
+  milestones: [200, 400, 600, 800]
+  gamma: 0.5
+  weight_decay: 0
+
+epochs: 10
+test_every: 10
+save_models: false
+resume: -1
+
+n_threads: 8
+cpu: false
+seed: 1

@@ -1,0 +1,9 @@
+dataset:
+  data_dir: './Mayo-lite'
+  augment: false
+
+n_threads: 4
+cpu: false
+seed: 1
+
+save_results: true
